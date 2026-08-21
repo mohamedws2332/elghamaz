@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>الغماز 😈</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- START SCREEN -->
+        <section id="startScreen" class="card">
+
+            <div class="logo">😈</div>
+
+            <h1>الغماز</h1>
+
+            <p>
+                لعبة بسيطة... بس محدش يعرف مين الغماز 👀
+            </p>
+
+            <label for="playersInput">
+                عدد اللاعبين
+            </label>
+
+            <input
+                id="playersInput"
+                type="number"
+                min="2"
+                max="50"
+                placeholder="مثال: 5"
+            >
+
+            <button id="startButton">
+                ابدأ اللعبة
+            </button>
+
+            <p id="errorMessage" class="error"></p>
+
+        </section>
+
+
+        <!-- GAME SCREEN -->
+        <section id="gameScreen" class="card hidden">
+
+            <div class="player-badge">
+                اللاعب <span id="playerNumber">1</span>
+            </div>
+
+            <h2 id="gameTitle">
+                دورك 👀
+            </h2>
+
+            <p id="gameDescription">
+                امسك الموبايل لوحدك واضغط على الزر
+            </p>
+
+            <button id="revealButton" class="reveal-button">
+                👆 اضغط هنا
+            </button>
+
+
+            <!-- RESULT -->
+            <div id="resultBox" class="result-box hidden">
+
+                <div id="resultIcon"></div>
+
+                <h2 id="resultText"></h2>
+
+            </div>
+
+
+            <!-- PASS PHONE -->
+            <div id="passScreen" class="pass-screen hidden">
+
+                <div class="lock-icon">
+                    🔒
+                </div>
+
+                <h2>
+                    النتيجة اتقفلت
+                </h2>
+
+                <p>
+                    مرر الموبايل للاعب التالي
+                </p>
+
+                <button id="nextButton">
+                    اللاعب التالي →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- END SCREEN -->
+        <section id="endScreen" class="card hidden">
+
+            <div class="end-icon">
+                🎉
+            </div>
+
+            <h1>
+                خلصنا!
+            </h1>
+
+            <p>
+                كل اللاعبين عرفوا أدوارهم.
+                <br>
+                دلوقتي ابدأوا اللعب وحاولوا تعرفوا مين الغماز 😈
+            </p>
+
+            <button id="newGameButton">
+                🔄 لعبة جديدة
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>v
